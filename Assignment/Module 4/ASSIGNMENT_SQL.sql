@@ -78,50 +78,6 @@ VALUES
 (105, 'John', 'Doe', 75000, '2016-09-05', 'Account Manager', 'john.doe@globalent.com', '212-555-9876');
 
 
--- QUESTION : 1 : Statement to create the Contact table 
-/*
-CREATE TABLE M_contact (
-    contact_id INT NOT NULL,
-    companyid INT NOT NULL,
-    Firstname VARCHAR(45) NOT NULL,
-    Lastname VARCHAR(45),
-    street VARCHAR(45) NOT NULL,
-    city VARCHAR(45) NOT NULL,
-    state VARCHAR(5) NOT NULL,
-    zip VARCHAR(10) NOT NULL,
-    Ismain BOOLEAN,
-    Email VARCHAR(45),
-    Phone VARCHAR(12) NOT NULL,
-    PRIMARY KEY (contact_id),
-    FOREIGN KEY (companyid) REFERENCES M_company(companyid)
-);
-*/
- 
--- QUESTION : 2 : Statement to create the Employee table 
-/*
-CREATE TABLE M_employee (
-    Employee_id INT NOT NULL,
-    Firstname VARCHAR(45) NOT NULL,
-    Lastname VARCHAR(45),
-    salary FLOAT,
-    Hiredate DATE,
-    JobTitle VARCHAR(45),
-    Email VARCHAR(45),
-    Phone VARCHAR(12) NOT NULL,
-    FOREIGN KEY (Employee_id) REFERENCES M_contactemployee(Employee_id)
-);
-/*
-
--- QUESTION : 3 : Statement to create the ContactEmployee table
-/* create table M_contactemployee(
-ContactEmployee_id int not null,
-contact_id int not null,
-Employee_id int not null,
-Contact_date date,
-Descriptions varchar(100),
-PRIMARY KEY (Employee_id),
-FOREIGN KEY (contact_id) REFERENCES M_contact(contact_id));
-*/
 
 -- QUESTION : 4 : In the Employee table, the statement that changes Lesley Bland’s phone number to 215-555-8800 
 
